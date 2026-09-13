@@ -1,3 +1,5 @@
+//FIXED added back in
+console.log("Checking status for: " + userName);
 
 function weeklyGoal(userName, dailyGoal, bonusTasks) {
 
