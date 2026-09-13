@@ -1,10 +1,63 @@
+form {
+    display: grid;
+    gap: 1rem;
+}
+
+.form-group {
+    display: grid;
+    gap: 0.5em;
+}
+
+label {
+    font-weight: 700;
+}
+
+input {
+    background-color: rgb(195, 243, 243);
+    color: black;
+    border: ;
+    width: 100%;
+    border-radius: 16px;
+    padding: 1ex 2ex;
+}
+
+#goal-btn {
+    background-color: rgb(70, 70, 71);
+    border-radius: 16px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+}
+
 h1 {
-    color:darkblue;
-    font-weight: bold;
+    color: rgb(10, 10, 10);
+    font-weight: bolder;
     font-size: 16pt;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 p {
-    color: black;
-    font-size: 12pt;
+    color: rgb(8, 8, 8);
+    font-size: 14pt;
+    text-align: center;
+}
+
+#goal-message {
+    color: rgb(212, 9, 9);
+    font-size: 18pt;
+    text-align: center;
+}
+
+.custom-msg {
+    color: rgb(8, 8, 8);
+    font-size: 14pt;
+    text-align: center;
+    font-style: italic;
+
 }

@@ -1,34 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
-    <script src="js/script.js" defer></script>
+    <title>Interactive Dashboard</title>
 
     <!-- Bootstrap  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
 </head>
+
 <body>
-    <heading><h1>My Interactive Dashboard</h1>
+    <heading>
+        <h1>My Interactive Dashboard</h1>
         <p>This dashboard was created by Kristina Solloway for the WEB-115 course at Wake Tech.</p>
     </heading>
 
     <script>
-        document.write("This dashboard demonstrates how JavaScript can be used to create interactive websites.");
-    </script>
+        document.write('<div class="custom-msg">This dashboard demonstrates how JavaScript can be used to create interactive websites.</div>');
+    </script><br><br>
     <!--"The <noscript> is for web browsers with JavaScript rendering disabled."-->
     <noscript>
         Unfortunately, your web browser does not support JavaScript.
     </noscript>
     <div class="container">
         <div class="row">
-        <!-- Dashboard Content -->
+            <div class="col" id="weekly-tasks">
+                <form>
+                    <div class="form-group">
+                        <label for="userName">Name:</label>
+                        <input type="text" id="userName" name="username"><br><br>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dailyGoal">Daily Task Goals:</label>
+                        <input type="number" id="dailyGoal" name="dailytaskgoal"><br><br>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bonusTasks">Weekly Bonus Tasks:</label>
+                        <input type="number" id="bonusTasks" name="weeklybonustasks"><br><br>
+                    </div>
+
+                    <button type="button" id="goal-btn">CALCULATE</button><br><br>
+                </form>
+
+                <p id="goal-message"></p>
+                <script type="text/javascript" src="js/task-manager.js"></script>
+            </div>
+
         </div>
     </div>
 
 </body>
+
 </html>
