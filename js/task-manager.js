@@ -1,7 +1,9 @@
-//FIXED added back in
-console.log("Checking status for: " + userName);
+
 
 function weeklyGoal(userName, dailyGoal, bonusTasks) {
+
+    //FIXED added back in
+    console.log("Checking status for: " + userName);
 
     let weeklyTotal = dailyGoal * 5;
     //FIXED changed weeklyGoal to WeeklyTotal
