@@ -27,24 +27,24 @@ This program accepts two inputs from the user: a measurement value and a convers
 
 ### Logic and Pseudocode
 
-BEGIN
-INPUT Value
-INPUT conversionChoice
-IF conversionChoice = “inch to centimeter” THEN
-	SET result = Value * 2.54
-ELSE IF conversionChoice = “foot to centimeter” THEN
-	SET result = Value * 30.48
-ELSE IF conversionChoice = “yard to meter” THEN
-	SET result = Value * 0.91
-ELSE IF conversionChoice = “mile to kilometer” THEN
-	SET result = Value * 1.61
-ELSE IF conversionChoice = “centimeter to inch” THEN
-	SET result = Value * 0.39
-ELSE IF conversionChoice = “centimeter to foot” THEN
-	SET result = Value * 0.0328
-ELSE IF conversionChoice = “meter to yard” THEN
-	SET result = Value * 1.09
-ELSE IF conversionChoice = “kilometer to mile” THEN
-	SET result = Value * 0.62
-DISPLAY result
+BEGIN  
+INPUT Value  
+INPUT conversionChoice  
+IF conversionChoice = “inch to centimeter” THEN  
+	SET result = Value * 2.54  
+ELSE IF conversionChoice = “foot to centimeter” THEN  
+	SET result = Value * 30.48  
+ELSE IF conversionChoice = “yard to meter” THEN  
+	SET result = Value * 0.91  
+ELSE IF conversionChoice = “mile to kilometer” THEN  
+	SET result = Value * 1.61  
+ELSE IF conversionChoice = “centimeter to inch” THEN  
+	SET result = Value * 0.39  
+ELSE IF conversionChoice = “centimeter to foot” THEN  
+	SET result = Value * 0.0328  
+ELSE IF conversionChoice = “meter to yard” THEN  
+	SET result = Value * 1.09  
+ELSE IF conversionChoice = “kilometer to mile” THEN  
+	SET result = Value * 0.62  
+DISPLAY result  
 END
