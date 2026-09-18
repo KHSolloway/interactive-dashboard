@@ -12,6 +12,7 @@ function weeklyGoal(userName, dailyGoal, bonusTasks) {
     let output = userName + " has a weekly goal of " + totalGoal + " tasks.";
 
     document.getElementById("goal-message").innerHTML = output;
+    
 
 }
 
