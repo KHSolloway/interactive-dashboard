@@ -54,3 +54,5 @@ END
 This “Magic Eight Ball” game uses HTML, CSS, and JavaScript. The game accepts and checks for user input in a field named “question” and displays a random answer when the user presses the “ball” image. Each time the ball is pressed, a new random answer is selected from an array and displayed. The ball also shakes while the mouse button is held down.
 
 The answer is hidden when the “reset” button is clicked. The reset button also clears the question field so the user can enter a new question and start the process again. If the question field is empty when the ball image is pressed, an alert appears asking, “Do you have a question for me?”
+
+The user can also add a new response to the Magic Eight Ball by clicking the “Add a New Response” button. When clicked, a prompt asks the user to enter a response. If a response is entered, JavaScript uses the push() method to add it to the end of the answers array. The new response immediately becomes one of the possible random answers. User-added responses are temporary and will be removed when the page is refreshed.
