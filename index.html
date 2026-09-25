@@ -32,6 +32,22 @@
 
     <div class="container">
         <div class="row">
+            <div class="col" id="magic-eight-ball">
+                <script src="js/magic-eight-ball.js" defer></script>
+                <link rel="stylesheet" href="css/magic-eight-ball.css">
+                <h2 class="heading">Magic Eight Ball</h2>
+                <form>
+                    <p>Type a yes/no question below, then click on the Eight Ball below to get your answer!</p>
+                    <input id="question" name="question" size="80">
+                    <div id="magicEightBall">
+                        <div id="circle"></div>
+                        <img id="ball" src="img/magic-eight-ball.png" />
+                    </div>
+                    <button id="reset" name="reset" type="reset">Ask another question</button>
+                </form>
+                <br>
+            </div>
+
             <div class="col" id="metric-converter">
                 <form>
                     <label for="conversionValue">Input a Numeric Value:</label>
@@ -52,7 +68,7 @@
 
                     <div id="button-grid">
                         <button type="button" id="conversion-btn">CALCULATE</button>
-                        <button type="reset" id="reset">RESET</button>
+                        <button type="reset" id="converter-reset">RESET</button>
                     </div>
                     <p id="conversion-message"></p>
                 </form>

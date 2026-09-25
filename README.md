@@ -48,3 +48,9 @@ ELSE IF conversionChoice = “kilometer to mile” THEN
 	SET result = Value * 0.62  
 DISPLAY result  
 END
+
+
+### Magic Eight Ball
+This “Magic Eight Ball” game uses HTML, CSS, and JavaScript. The game accepts and checks for user input in a field named “question” and displays a random answer when the user presses the “ball” image. Each time the ball is pressed, a new random answer is selected from an array and displayed. The ball also shakes while the mouse button is held down.
+
+The answer is hidden when the “reset” button is clicked. The reset button also clears the question field so the user can enter a new question and start the process again. If the question field is empty when the ball image is pressed, an alert appears asking, “Do you have a question for me?”

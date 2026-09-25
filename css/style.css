@@ -23,7 +23,8 @@ select {
 
 #goal-btn,
 #conversion-btn,
-#reset {
+#reset,
+#converter-reset {
     background-color: rgb(70, 70, 71);
     border-radius: 16px;
     font-size: 18px;

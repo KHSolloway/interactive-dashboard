@@ -60,6 +60,6 @@ document.getElementById("conversion-btn").addEventListener("click", function (ev
 });
 
 // 10. When the reset button is clicked, make the conversion-message null
-document.getElementById("reset").addEventListener("click", function () {
+document.getElementById("converter-reset").addEventListener("click", function () {
     document.getElementById("conversion-message").innerHTML = "";
 });
