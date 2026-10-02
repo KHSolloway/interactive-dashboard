@@ -33,7 +33,7 @@
     <div class="container">
         <div class="row">
             <div class="col" id="magic-eight-ball">
-                <script src="js/magic-eight-ball.js" defer></script>
+
                 <link rel="stylesheet" href="css/magic-eight-ball.css">
                 <h2 class="heading">Magic Eight Ball</h2>
                 <form>
@@ -44,11 +44,14 @@
                         <img id="ball" src="img/magic-eight-ball.png" />
                     </div>
                     <button id="reset" name="reset" type="reset">Ask another question</button>
+                    <button id="addResponse" type="button">Add a New Response</button>
                 </form>
                 <br>
+                <script src="js/magic-eight-ball.js" defer></script>
             </div>
 
             <div class="col" id="metric-converter">
+                <h2 class="heading">Metric Converter</h2>
                 <form>
                     <label for="conversionValue">Input a Numeric Value:</label>
                     <input type="number" id="conversionValue">
@@ -75,9 +78,14 @@
 
                 <script type="text/javascript" src="js/metric-converter.js" defer></script>
             </div><br>
+
+
             <div class="col" id="weekly-tasks">
+
+
                 <form>
                     <div class="form-group">
+                        <h2 class="heading">Weekly Tasks</h2>
                         <label for="userName">Name:</label>
                         <input type="text" id="userName" name="username"><br><br>
                     </div>
@@ -95,7 +103,20 @@
                     <button type="button" id="goal-btn">CALCULATE</button><br><br>
                 </form>
 
-                <p id="goal-message"></p>
+                <p id="goal-message"></p><br><br>
+
+                <div id="task-list">
+
+                    <h3 class="heading">Weekly Task List</h3>
+                    <p>Enter a task below to manage your goals.</p>
+                    <form>
+                        <label id="taskListLabel">Enter Task:</label>
+                        <input type="text" id="task-name">
+                    </form><br>
+                    <button type="button" id="add-task">Add Task:</button>
+
+
+                </div>
                 <script type="text/javascript" src="js/task-manager.js"></script>
             </div>
 

@@ -39,3 +39,17 @@ document.getElementById("reset").addEventListener("click", function (event) {
     document.getElementById("circle").style.display = "none";
 
 });
+
+
+//4. Find the Add Response button and listen for a click.
+document.getElementById("addResponse").addEventListener("click", function (event) {
+
+    //4a. When clicked, prompt user to enter a new response and store it.
+    let newResponse = prompt("Enter a new Magic Eight Ball response:");
+
+    //4b. If newResponse contains something, push that response onto the end of the answers array.
+    if (newResponse) {
+
+        answers.push(newResponse);
+    }
+});

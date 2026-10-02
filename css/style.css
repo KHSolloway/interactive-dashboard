@@ -24,7 +24,9 @@ select {
 #goal-btn,
 #conversion-btn,
 #reset,
-#converter-reset {
+#converter-reset,
+#addResponse,
+#add-task {
     background-color: rgb(70, 70, 71);
     border-radius: 16px;
     font-size: 18px;
@@ -44,12 +46,17 @@ select {
 
 }
 
-h1 {
+h1,
+h3 {
     color: rgb(10, 10, 10);
     font-weight: bolder;
     font-size: 16pt;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    text-align: center;
 }
 
 p {
