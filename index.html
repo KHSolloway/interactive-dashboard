@@ -17,10 +17,10 @@
 </head>
 
 <body>
-    <heading>
+    <header>
         <h1>My Interactive Dashboard</h1>
         <p>This dashboard was created by Kristina Solloway for the WEB-115 course at Wake Tech.</p>
-    </heading>
+    </header>
 
     <script>
         document.write('<div class="custom-msg">This dashboard demonstrates how JavaScript can be used to create interactive websites.</div>');
@@ -32,6 +32,8 @@
 
     <div class="container">
         <div class="row">
+
+            <!--MOD 6 Assignment - Magic Eight Ball starts here-->
             <div class="col" id="magic-eight-ball">
 
                 <link rel="stylesheet" href="css/magic-eight-ball.css">
@@ -41,7 +43,7 @@
                     <input id="question" name="question" size="80">
                     <div id="magicEightBall">
                         <div id="circle"></div>
-                        <img id="ball" src="img/magic-eight-ball.png" />
+                        <img id="ball" src="img/magic-eight-ball.png" alt="magic eight ball graphic">
                     </div>
                     <button id="reset" name="reset" type="reset">Ask another question</button>
                     <button id="addResponse" type="button">Add a New Response</button>
@@ -49,7 +51,9 @@
                 <br>
                 <script src="js/magic-eight-ball.js" defer></script>
             </div>
+            <!--"Mod 6 END-->
 
+            <!--MOD 5 Assignment - Imperial/Metric converter starts here-->
             <div class="col" id="metric-converter">
                 <h2 class="heading">Metric Converter</h2>
                 <form>
@@ -78,10 +82,10 @@
 
                 <script type="text/javascript" src="js/metric-converter.js" defer></script>
             </div><br>
+            <!--"Mod 5 END-->
 
-
+            <!--"Mod 4 Weekly Task Goal Calculator starts here-->
             <div class="col" id="weekly-tasks">
-
 
                 <form>
                     <div class="form-group">
@@ -101,22 +105,51 @@
                     </div>
 
                     <button type="button" id="goal-btn">CALCULATE</button><br><br>
+
                 </form>
 
                 <p id="goal-message"></p><br><br>
+                <!--"Mod 4 END-->
+
+                <!--Mod 7 DOM Assignment Begins here-->
+
+
+                <h3 class="heading">Weekly Task List</h3>
+                <p>Enter a task below to manage your goals.</p>
+                <form id="task-form">
+                    <label for="task-name" id="taskListLabel">Enter Task:</label>
+                    <input type="text" id="task-name">
+
+
+                    <!--"Mod 7 END-->
+
+                    <!--Mod 9 OOP Assignment Begins here-->
+
+                    <div class="form-group">
+                        <label for="priority">Priority:</label>
+                        <select id="priority" name="priority">
+                            <option value="High">High</option>
+                            <option value="Medium" selected>Medium</option>
+                            <option value="Low">Low</option>
+                        </select><br><br>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="isImportant">Important:</label>
+                        <input type="checkbox" id="isImportant" name="isImportant"><br><br>
+                    </div>
+                    <button type="button" id="add-task">Add Task:</button>
+                </form><br>
 
                 <div id="task-list">
-
-                    <h3 class="heading">Weekly Task List</h3>
-                    <p>Enter a task below to manage your goals.</p>
-                    <form>
-                        <label id="taskListLabel">Enter Task:</label>
-                        <input type="text" id="task-name">
-                    </form><br>
-                    <button type="button" id="add-task">Add Task:</button>
-
-
+                    <ul id="user-tasks"></ul>
                 </div>
+
+                <button type="button" id="delete-list">Delete Entire List</button><br><br>
+
+                <!--"Mod 9 END-->
+
+
                 <script type="text/javascript" src="js/task-manager.js"></script>
             </div>
 

@@ -21,11 +21,16 @@ select {
     padding: 1ex 2ex;
 }
 
+input[type="checkbox"] {
+    width: auto;
+}
+
 #goal-btn,
 #conversion-btn,
 #reset,
 #converter-reset,
 #addResponse,
+#delete-list,
 #add-task {
     background-color: rgb(70, 70, 71);
     border-radius: 16px;
@@ -47,6 +52,7 @@ select {
 }
 
 h1,
+h2,
 h3 {
     color: rgb(10, 10, 10);
     font-weight: bolder;
@@ -78,4 +84,32 @@ p {
     text-align: center;
     font-style: italic;
 
+}
+
+/*DOM task list styling */
+#user-tasks {
+    list-style: none;
+    padding: 0;
+}
+
+#user-tasks li {
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+#user-tasks button {
+    margin-left: 8px;
+    padding: 4px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#user-tasks input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#delete-list {
+    display: block;
+    margin: 15px auto;
 }
