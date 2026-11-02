@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/digital-clock.css">
     <title>Interactive Dashboard</title>
 
     <!-- Bootstrap  -->
@@ -17,7 +18,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="pt-4">
         <h1>My Interactive Dashboard</h1>
         <p>This dashboard was created by Kristina Solloway for the WEB-115 course at Wake Tech.</p>
     </header>
@@ -30,17 +31,17 @@
         Unfortunately, your web browser does not support JavaScript.
     </noscript>
 
-    <div class="container">
-        <div class="row">
+    <main class="container">
+        <div class="row gx-5 gy-3">
 
             <!--MOD 6 Assignment - Magic Eight Ball starts here-->
-            <div class="col" id="magic-eight-ball">
+            <div class="col col-12 col-md-6" id="magic-eight-ball">
 
                 <link rel="stylesheet" href="css/magic-eight-ball.css">
                 <h2 class="heading">Magic Eight Ball</h2>
                 <form>
                     <p>Type a yes/no question below, then click on the Eight Ball below to get your answer!</p>
-                    <input id="question" name="question" size="80">
+                    <input type="text" id="question" name="question">
                     <div id="magicEightBall">
                         <div id="circle"></div>
                         <img id="ball" src="img/magic-eight-ball.png" alt="magic eight ball graphic">
@@ -53,39 +54,8 @@
             </div>
             <!--"Mod 6 END-->
 
-            <!--MOD 5 Assignment - Imperial/Metric converter starts here-->
-            <div class="col" id="metric-converter">
-                <h2 class="heading">Metric Converter</h2>
-                <form>
-                    <label for="conversionValue">Input a Numeric Value:</label>
-                    <input type="number" id="conversionValue">
-
-                    <label for="conversionChoice">Select Conversion Type:</label>
-                    <select id="conversionChoice" name="conversionChoice">
-                        <option value="">&lt;Select&gt;</option>
-                        <option value="2.54">inches to centimeters</option>
-                        <option value="30.48">feet to centimeters</option>
-                        <option value="0.91">yards to meters</option>
-                        <option value="1.61">miles to kilometers</option>
-                        <option value="0.39">centimeters to inches</option>
-                        <option value="0.0328">centimeters to feet</option>
-                        <option value="1.09">meters to yards</option>
-                        <option value="0.62">kilometers to miles</option>
-                    </select>
-
-                    <div id="button-grid">
-                        <button type="button" id="conversion-btn">CALCULATE</button>
-                        <button type="reset" id="converter-reset">RESET</button>
-                    </div>
-                    <p id="conversion-message"></p>
-                </form>
-
-                <script type="text/javascript" src="js/metric-converter.js" defer></script>
-            </div><br>
-            <!--"Mod 5 END-->
-
             <!--"Mod 4 Weekly Task Goal Calculator starts here-->
-            <div class="col" id="weekly-tasks">
+            <div class="col col-12 col-md-6" id="weekly-tasks">
 
                 <form>
                     <div class="form-group">
@@ -152,10 +122,54 @@
 
                 <script type="text/javascript" src="js/task-manager.js"></script>
             </div>
+        </div> <!-- End first row -->
+        <div class="row gx-5 gy-3">
 
+            <!--MOD 5 Assignment - Imperial/Metric converter starts here-->
+            <div class="col col-12 col-md-6" id="metric-converter">
+                <h2 class="heading">Metric Converter</h2>
+                <form>
+                    <label for="conversionValue">Input a Numeric Value:</label>
+                    <input type="number" id="conversionValue">
+
+                    <label for="conversionChoice">Select Conversion Type:</label>
+                    <select id="conversionChoice" name="conversionChoice">
+                        <option value="">&lt;Select&gt;</option>
+                        <option value="2.54">inches to centimeters</option>
+                        <option value="30.48">feet to centimeters</option>
+                        <option value="0.91">yards to meters</option>
+                        <option value="1.61">miles to kilometers</option>
+                        <option value="0.39">centimeters to inches</option>
+                        <option value="0.0328">centimeters to feet</option>
+                        <option value="1.09">meters to yards</option>
+                        <option value="0.62">kilometers to miles</option>
+                    </select>
+
+                    <div id="button-grid">
+                        <button type="button" id="conversion-btn">CALCULATE</button>
+                        <button type="reset" id="converter-reset">RESET</button>
+                    </div>
+                    <p id="conversion-message"></p>
+                </form>
+
+                <script type="text/javascript" src="js/metric-converter.js" defer></script>
+            </div>
+            <!--"Mod 5 END-->
+
+
+
+            <!-- MOD 10 Assignment - Digital Clock -->
+            <div id="digital-clock" class="col col-12 col-md-6">
+                <h3>Current Time &amp; Date</h3>
+                <p id="clock-face"></p>
+                <p id="calendar-date"></p>
+
+                <script src="js/digital-clock.js" defer></script>
+            </div>
+            <!-- MOD 10 END -->
 
         </div>
-    </div>
+    </main>
 
 </body>
 

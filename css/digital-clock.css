@@ -1,0 +1,15 @@
+#digital-clock {
+    text-align: center;
+    padding: 20px;
+}
+
+#clock-face {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0F3966;
+}
+
+#calendar-date {
+    font-size: 1.25rem;
+    color: #555555;
+}

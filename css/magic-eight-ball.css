@@ -1,12 +1,24 @@
 #magic-eight-ball {
-  max-width: 410px;
   text-align: center;
-  margin: 0 auto;
+  min-width: 0;
+}
+
+#magic-eight-ball #question {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+#magic-eight-ball #reset,
+#magic-eight-ball #addResponse {
+  width: 100%;
+  max-width: 100%;
 }
 
 #magicEightBall {
   position: relative;
   display: inline-block;
+  justify-self: center;
 }
 
 #circle {

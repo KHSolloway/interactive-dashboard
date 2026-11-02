@@ -39,7 +39,7 @@ document.getElementById("conversion-btn").addEventListener("click", function (ev
     let choiceIndex = document.getElementById("conversionChoice").selectedIndex;
 
     // 4. Collect all the option elements.
-    let conversionOptions = document.getElementsByTagName("option");
+    let conversionOptions = document.getElementById("conversionChoice").options;
 
     // 5. Find the "value" of the conversionOptions that was selected.
     let conversionRate = parseFloat(conversionOptions[choiceIndex].value);
