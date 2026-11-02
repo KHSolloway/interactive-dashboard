@@ -33,142 +33,152 @@
 
     <main class="container">
         <div class="row gx-5 gy-3">
+            <!-- LEFT COLUMN -->
+            <div class="col-12 col-md-6">
 
-            <!--MOD 6 Assignment - Magic Eight Ball starts here-->
-            <div class="col col-12 col-md-6" id="magic-eight-ball">
+                <!--MOD 6 Assignment - Magic Eight Ball starts here-->
+                <div id="magic-eight-ball">
 
-                <link rel="stylesheet" href="css/magic-eight-ball.css">
-                <h2 class="heading">Magic Eight Ball</h2>
-                <form>
-                    <p>Type a yes/no question below, then click on the Eight Ball below to get your answer!</p>
-                    <input type="text" id="question" name="question">
-                    <div id="magicEightBall">
-                        <div id="circle"></div>
-                        <img id="ball" src="img/magic-eight-ball.png" alt="magic eight ball graphic">
-                    </div>
-                    <button id="reset" name="reset" type="reset">Ask another question</button>
-                    <button id="addResponse" type="button">Add a New Response</button>
-                </form>
-                <br>
-                <script src="js/magic-eight-ball.js" defer></script>
-            </div>
-            <!--"Mod 6 END-->
-
-            <!--"Mod 4 Weekly Task Goal Calculator starts here-->
-            <div class="col col-12 col-md-6" id="weekly-tasks">
-
-                <form>
-                    <div class="form-group">
-                        <h2 class="heading">Weekly Tasks</h2>
-                        <label for="userName">Name:</label>
-                        <input type="text" id="userName" name="username"><br><br>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="dailyGoal">Daily Task Goals:</label>
-                        <input type="number" id="dailyGoal" name="dailytaskgoal"><br><br>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="bonusTasks">Weekly Bonus Tasks:</label>
-                        <input type="number" id="bonusTasks" name="weeklybonustasks"><br><br>
-                    </div>
-
-                    <button type="button" id="goal-btn">CALCULATE</button><br><br>
-
-                </form>
-
-                <p id="goal-message"></p><br><br>
-                <!--"Mod 4 END-->
-
-                <!--Mod 7 DOM Assignment Begins here-->
-
-
-                <h3 class="heading">Weekly Task List</h3>
-                <p>Enter a task below to manage your goals.</p>
-                <form id="task-form">
-                    <label for="task-name" id="taskListLabel">Enter Task:</label>
-                    <input type="text" id="task-name">
-
-
-                    <!--"Mod 7 END-->
-
-                    <!--Mod 9 OOP Assignment Begins here-->
-
-                    <div class="form-group">
-                        <label for="priority">Priority:</label>
-                        <select id="priority" name="priority">
-                            <option value="High">High</option>
-                            <option value="Medium" selected>Medium</option>
-                            <option value="Low">Low</option>
-                        </select><br><br>
-                    </div>
-
-                    <div class="important-field">
-                        <label for="isImportant">Important:</label>
-                        <input type="checkbox" id="isImportant" name="isImportant">
-                    </div>
-                    <button type="button" id="add-task">Add Task</button>
-                </form><br>
-
-                <div id="task-list">
-                    <ul id="user-tasks"></ul>
+                    <link rel="stylesheet" href="css/magic-eight-ball.css">
+                    <h2 class="heading">Magic Eight Ball</h2>
+                    <form>
+                        <p>Type a yes/no question below, then click on the Eight Ball below to get your answer!</p>
+                        <input type="text" id="question" name="question">
+                        <div id="magicEightBall">
+                            <div id="circle"></div>
+                            <img id="ball" src="img/magic-eight-ball.png" alt="magic eight ball graphic">
+                        </div>
+                        <button id="reset" name="reset" type="reset">Ask another question</button>
+                        <button id="addResponse" type="button">Add a New Response</button>
+                    </form>
+                    <br>
+                    <script src="js/magic-eight-ball.js" defer></script>
                 </div>
-
-                <button type="button" id="delete-list">Delete Entire List</button><br><br>
-
-                <!--"Mod 9 END-->
+                <!--"Mod 6 END-->
 
 
-                <script type="text/javascript" src="js/task-manager.js"></script>
-            </div>
-        </div> <!-- End first row -->
-        <div class="row gx-5 gy-3">
+                <!--MOD 5 Assignment - Imperial/Metric converter starts here-->
+                <div id="metric-converter" class="mt-4">
+                    <h2 class="heading">Metric Converter</h2>
+                    <form>
+                        <label for="conversionValue">Input a Numeric Value:</label>
+                        <input type="number" id="conversionValue">
 
-            <!--MOD 5 Assignment - Imperial/Metric converter starts here-->
-            <div class="col col-12 col-md-6" id="metric-converter">
-                <h2 class="heading">Metric Converter</h2>
-                <form>
-                    <label for="conversionValue">Input a Numeric Value:</label>
-                    <input type="number" id="conversionValue">
+                        <label for="conversionChoice">Select Conversion Type:</label>
+                        <select id="conversionChoice" name="conversionChoice">
+                            <option value="">&lt;Select&gt;</option>
+                            <option value="2.54">inches to centimeters</option>
+                            <option value="30.48">feet to centimeters</option>
+                            <option value="0.91">yards to meters</option>
+                            <option value="1.61">miles to kilometers</option>
+                            <option value="0.39">centimeters to inches</option>
+                            <option value="0.0328">centimeters to feet</option>
+                            <option value="1.09">meters to yards</option>
+                            <option value="0.62">kilometers to miles</option>
+                        </select>
 
-                    <label for="conversionChoice">Select Conversion Type:</label>
-                    <select id="conversionChoice" name="conversionChoice">
-                        <option value="">&lt;Select&gt;</option>
-                        <option value="2.54">inches to centimeters</option>
-                        <option value="30.48">feet to centimeters</option>
-                        <option value="0.91">yards to meters</option>
-                        <option value="1.61">miles to kilometers</option>
-                        <option value="0.39">centimeters to inches</option>
-                        <option value="0.0328">centimeters to feet</option>
-                        <option value="1.09">meters to yards</option>
-                        <option value="0.62">kilometers to miles</option>
-                    </select>
+                        <div id="button-grid">
+                            <button type="button" id="conversion-btn">CALCULATE</button>
+                            <button type="reset" id="converter-reset">RESET</button>
+                        </div>
+                        <p id="conversion-message"></p>
+                    </form>
 
-                    <div id="button-grid">
-                        <button type="button" id="conversion-btn">CALCULATE</button>
-                        <button type="reset" id="converter-reset">RESET</button>
+                    <script type="text/javascript" src="js/metric-converter.js" defer></script>
+                </div>
+                <!--"Mod 5 END-->
+
+            </div> <!-- End LEFT COLUMN -->
+
+            <!-- RIGHT COLUMN -->
+            <div class="col-12 col-md-6">
+
+
+                <!-- MOD 10 Assignment - Digital Clock -->
+                <div id="digital-clock" class="col">
+                    <h3>Current Time &amp; Date</h3>
+                    <p id="clock-face"></p>
+                    <p id="calendar-date"></p>
+
+                    <script src="js/digital-clock.js" defer></script>
+                </div>
+                <!-- MOD 10 END -->
+
+
+                <!--"Mod 4 Weekly Task Goal Calculator starts here-->
+
+                <div id="weekly-tasks" class="mt-4">
+
+                    <form>
+                        <div class="form-group">
+                            <h2 class="heading">Weekly Tasks</h2>
+                            <label for="userName">Name:</label>
+                            <input type="text" id="userName" name="username"><br><br>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dailyGoal">Daily Task Goals:</label>
+                            <input type="number" id="dailyGoal" name="dailytaskgoal"><br><br>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="bonusTasks">Weekly Bonus Tasks:</label>
+                            <input type="number" id="bonusTasks" name="weeklybonustasks"><br><br>
+                        </div>
+
+                        <button type="button" id="goal-btn">CALCULATE</button><br><br>
+
+                    </form>
+
+                    <p id="goal-message"></p><br><br>
+                    <!--"Mod 4 END-->
+
+                    <!--Mod 7 DOM Assignment Begins here-->
+
+
+                    <h3 class="heading">Weekly Task List</h3>
+                    <p>Enter a task below to manage your goals.</p>
+                    <form id="task-form">
+                        <label for="task-name" id="taskListLabel">Enter Task:</label>
+                        <input type="text" id="task-name">
+
+
+                        <!--"Mod 7 END-->
+
+                        <!--Mod 9 OOP Assignment Begins here-->
+
+                        <div class="form-group">
+                            <label for="priority">Priority:</label>
+                            <select id="priority" name="priority">
+                                <option value="High">High</option>
+                                <option value="Medium" selected>Medium</option>
+                                <option value="Low">Low</option>
+                            </select><br><br>
+                        </div>
+
+                        <div class="important-field">
+                            <label for="isImportant">Important:</label>
+                            <input type="checkbox" id="isImportant" name="isImportant">
+                        </div>
+                        <button type="button" id="add-task">Add Task</button>
+                    </form><br>
+
+                    <div id="task-list">
+                        <ul id="user-tasks"></ul>
                     </div>
-                    <p id="conversion-message"></p>
-                </form>
 
-                <script type="text/javascript" src="js/metric-converter.js" defer></script>
-            </div>
-            <!--"Mod 5 END-->
+                    <button type="button" id="delete-list">Delete Entire List</button><br><br>
+
+                    <!--"Mod 9 END-->
 
 
+                    <script type="text/javascript" src="js/task-manager.js"></script>
+                </div> <!-- End Weekly Tasks -->
 
-            <!-- MOD 10 Assignment - Digital Clock -->
-            <div id="digital-clock" class="col col-12 col-md-6">
-                <h3>Current Time &amp; Date</h3>
-                <p id="clock-face"></p>
-                <p id="calendar-date"></p>
+            </div> <!-- End RIGHT COLUMN -->
 
-                <script src="js/digital-clock.js" defer></script>
-            </div>
-            <!-- MOD 10 END -->
+        </div> <!-- End Bootstrap row -->
 
-        </div>
     </main>
 
 </body>
